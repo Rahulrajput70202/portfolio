@@ -36,14 +36,10 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <motion.img
-            src="/public/about-me.jpg"
+           <motion.img
+            src="/about-me.jpg"
             alt="Rahul Bainade"
             className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-8 border-4 border-cyber-blue neon-blue"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.src = 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop';
-            }}
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ type: "spring", stiffness: 300 }}
           />
