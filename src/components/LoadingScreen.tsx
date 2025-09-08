@@ -43,15 +43,12 @@ const LoadingScreen: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <img
-            src="/public/about-me.jpg"
+                <img
+            src="/about-me.jpg"
             alt="Rahul Bainade"
             className="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-cyber-blue neon-blue"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.src = 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop';
-            }}
           />
+
         </motion.div>
 
         <motion.h1
