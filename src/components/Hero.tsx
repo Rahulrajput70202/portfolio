@@ -100,7 +100,7 @@ const Hero: React.FC = () => {
             whileTap={{ scale: 0.95 }}
           >
             <Mail className="w-5 h-5" />
-            <span>Contact Me</span>
+            <span>Contact </span>
           </motion.button>
         </motion.div>
 
